@@ -22,8 +22,7 @@ public class UserController {
 	
 	@GetMapping
 	public List<User> findAll() {
-		List<User> result = repository.findAll();
-		return result;
+		return repository.findAll();
 	}
 	
 	@GetMapping(value = "/{id}")

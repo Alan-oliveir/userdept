@@ -21,10 +21,10 @@ O objetivo é construir um pequeno sistema (API REST) de usuários e departament
 - Inserir um novo usuário
 
 ## Modelo do conceitual
-![Image](https://raw.githubusercontent.com/devsuperior/java-web-spring-2022/main/img/dominio.png "Modelo conceitual")
+![Image](https://github.com/Alan-oliveir/userdept/blob/main/images/dominio.png)
 
 ## Mapeamento objeto-relacional
-![Image](https://raw.githubusercontent.com/devsuperior/java-web-spring-2022/main/img/objetos.png "Objetos")
+![Image](https://github.com/Alan-oliveir/userdept/blob/main/images/objetos.png)
 
 ## Etapas da construção do projeto
 - Criar o projeto

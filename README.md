@@ -11,7 +11,7 @@
 ## Ferramentas utilizadas
 - Spring Tool Suite (STS)
 - Postman
-- Banco de Dados H2- 
+- Banco de Dados H2 
 
 ## Visão geral do sistema
 O objetivo é construir um pequeno sistema (API REST) de usuários e departamentos. O projeto tem os seguintes casos de uso:

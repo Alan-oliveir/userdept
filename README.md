@@ -20,7 +20,7 @@ O objetivo é construir um pequeno sistema (API REST) de usuários e departament
 - Buscar um usuário pelo seu id
 - Inserir um novo usuário
 
-## Modelo do conceitual
+## Modelo conceitual
 ![Image](https://github.com/Alan-oliveir/userdept/blob/main/images/dominio.png)
 
 ## Mapeamento objeto-relacional

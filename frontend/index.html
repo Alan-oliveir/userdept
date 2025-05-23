@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UserDept Frontend</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 2rem; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 2rem; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        input, select, button { margin: 0.5rem 0; padding: 0.5rem; }
+    </style>
+</head>
+<body>
+<div id="app">
+    <h1>Usuários</h1>
+
+    <table v-if="users.length">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Departamento</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr v-for="user in users" :key="user.id">
+            <td>{{ user.id }}</td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.department.name }}</td>
+        </tr>
+        </tbody>
+    </table>
+    <p v-else>Nenhum usuário encontrado.</p>
+
+    <h2>Adicionar novo usuário</h2>
+    <form @submit.prevent="addUser">
+        <label>
+            Nome:
+            <input v-model="newUser.name" required />
+        </label>
+        <br />
+        <label>
+            Departamento ID:
+            <input v-model.number="newUser.departmentId" required type="number" />
+        </label>
+        <br />
+        <button type="submit">Salvar</button>
+    </form>
+</div>
+
+<script>
+    const { createApp } = Vue;
+
+    createApp({
+        data() {
+            return {
+                users: [],
+                newUser: {
+                    name: '',
+                    departmentId: null
+                }
+            };
+        },
+        methods: {
+            fetchUsers() {
+                fetch('http://localhost:8080/users')
+                    .then(res => res.json())
+                    .then(data => {
+                        this.users = data;
+                    });
+            },
+            addUser() {
+                const payload = {
+                    name: this.newUser.name,
+                    department: { id: this.newUser.departmentId }
+                };
+                fetch('http://localhost:8080/users', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                })
+                    .then(res => {
+                        if (!res.ok) throw new Error("Erro ao salvar usuário");
+                        return res.json();
+                    })
+                    .then(() => {
+                        this.newUser.name = '';
+                        this.newUser.departmentId = null;
+                        this.fetchUsers(); // atualiza lista
+                    })
+                    .catch(err => alert(err.message));
+            }
+        },
+        mounted() {
+            this.fetchUsers();
+        }
+    }).mount('#app');
+</script>
+</body>
+</html>

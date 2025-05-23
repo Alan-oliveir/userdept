@@ -51,11 +51,7 @@ uso:
 
 ### Interface (Frontend)  
 
-- **Dashboard principal** com listagem de usuários
-- **Formulário de cadastro** com validação
-- **Busca por ID** com resultado em tempo real
 - **Design moderno e responsivo**
-- **Feedback visual** (alertas de sucesso/erro)
 - **Integração completa** com a API REST
 
 ## Screenshots
@@ -158,3 +154,8 @@ Veja a [documentação da interface](docs/frontend.md) para detalhes técnicos.
 - Ferramentas de Inteligência Artificial utilizadas como suporte:
     - [Claude](https://claude.ai) — Auxílio na geração e revisão de código JavaScript e HTML
     - [ChatGPT](https://openai.com/chatgpt) — Apoio na criação e organização da documentação técnica
+
+---   
+
+### Contato:  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alan-ogoncalves)

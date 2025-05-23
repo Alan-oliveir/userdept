@@ -35,6 +35,3 @@ O objetivo é construir um pequeno sistema (API REST) de usuários e departament
 
 ## Agradecimentos e Créditos
 [DevSuperior - Escola de programação](https://devsuperior.com.br)
-
-# Autor
-Alan de Oliveira Gonçalves - Linkedin: www.linkedin.com/in/alan-de-oliveira-gonçalves-207549258

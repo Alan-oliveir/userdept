@@ -21,6 +21,7 @@
 - Maven
 - Rest API
 - Banco de Dados H2
+- Scalar
 
 ### Frontend
 
@@ -34,7 +35,8 @@
 - IntelliJ IDEA
 - Postman (para testar a API)
 - Navegador (para testar o frontend)
-- Banco de Dados H2 
+- Banco de Dados H2
+- Scalar (Documentação da API)
 
 ## Visão geral do sistema
 
@@ -133,6 +135,7 @@ Detalhes completos estão disponíveis na [documentação da API](docs/api.md).
 3. Mapeamento objeto-relacional com JPA
 4. Configurar o banco de dados H2
 5. Criar os endpoints da REST API
+6. Adição da documentação da API com Scalar
 
 ### Frontend (Adicionado)
 

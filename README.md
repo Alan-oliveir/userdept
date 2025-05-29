@@ -72,6 +72,7 @@ src/
 ├── main/
 │   ├── java/com/devsuperior/userdept/
 │   │   ├── controllers/
+|   |   |   ├── ScalarDocController.java
 │   │   │   └── UserController.java
 │   │   ├── entities/
 │   │   │   ├── User.java
@@ -79,7 +80,9 @@ src/
 │   │   ├── repositories/
 │   │   │   └── UserRepository.java
 │   │   └── config/
-│   │       └── CorsConfig.java
+│   │       ├── CorsConfig.java
+|   |       └── OpenApiConfig.java
+|   |         
 │   └── resources/
 │       ├── static/
 │       │   ├── index.html

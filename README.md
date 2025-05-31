@@ -1,71 +1,88 @@
-# Projeto de API REST com banco de dados usando Java e Spring Boot
+# Sistema de Usuários e Departamentos
 
 ![Java](https://img.shields.io/badge/Java-17-blue?logo=java)
 ![Spring Boot](https://img.shields.io/badge/Spring--Boot-2.7-green?logo=spring)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
-> Projeto feito durante aula da DevSperior de desenvolvimento web com Rest API e banco de dados usando Java e Spring 
-> Boot, posteriormente expandido com interface frontend.
+> Sistema completo de gerenciamento de usuários e departamentos com API REST e interface web moderna e responsiva.
 
-**Documentações**:
+## 📸 Screenshots
 
-- [API REST](docs/api.md)
-- [Interface Web](docs/frontend.md)
+![Interface do Sistema](https://github.com/Alan-oliveir/userdept/blob/main/images/screenshot.png)
 
-## Tecnologias aprendidas
+## ✨ Funcionalidades
+
+### 🔧 API REST
+- **Listagem de usuários** com seus departamentos
+- **Busca individual** por ID
+- **Cadastro** de novos usuários
+- **Documentação interativa** com Scalar
+
+### 🎨 Interface Web
+- **Design moderno e responsivo** para desktop e mobile
+- **Integração completa** com a API REST
+- **Feedback visual** para todas as operações
+- **Formulários validados** com mensagens de erro/sucesso
+- **Atualização automática** da lista após operações
+
+## 🚀 Tecnologias
 
 ### Backend
-
-- Java
-- Spring Boot
-- Spring Data JPA
-- Maven
-- Rest API
-- Banco de Dados H2
-- Scalar
+- **Java 17** - Linguagem principal
+- **Spring Boot 2.7** - Framework web
+- **Spring Data JPA** - Persistência de dados
+- **H2 Database** - Banco de dados em memória
+- **Maven** - Gerenciamento de dependências
 
 ### Frontend
+- **HTML5** - Estrutura da página
+- **CSS3** - Estilização e responsividade
+- **JavaScript** - Interatividade e integração com API
 
-- HTML5
-- CSS3
-- JavaScript
-- Design Responsivo
+### Documentação
+- **Scalar** - Documentação interativa da API
 
-## Ferramentas utilizadas
+## 📋 Pré-requisitos
 
-- IntelliJ IDEA
-- Postman (para testar a API)
-- Navegador (para testar o frontend)
-- Banco de Dados H2
-- Scalar (Documentação da API)
+- Java 17+ instalado
+- Maven instalado
+- Navegador moderno (Chrome, Firefox, Edge...)
 
-## Visão geral do sistema
+## 🔧 Como executar
 
-O objetivo é construir um pequeno sistema (API REST) de usuários e departamentos. O projeto tem os seguintes casos de 
-uso:
+### 1. Clone o repositório
+```bash
+git clone https://github.com/Alan-oliveir/userdept.git
+cd userdept
+```
 
-### API REST (Backend)
+### 2. Execute o projeto
+```bash
+# Via Maven
+mvn spring-boot:run
 
-- Buscar todos usuários
-- Buscar um usuário pelo seu id
-- Inserir um novo usuário
+# Ou via IDE (IntelliJ/Eclipse)
+# Run As -> Spring Boot App
+```
 
-**Observação:** Configuração de CORS para permitir acesso ao frontend.
+### 3. Acesse a aplicação
+- **Interface Web**: http://localhost:8080/
+- **Documentação da API**: http://localhost:8080/scalar/docs
+- **Console H2**: http://localhost:8080/h2-console
 
-### Interface (Frontend)  
+### 4. Dados de acesso H2
+- **URL**: `jdbc:h2:mem:testdb`
+- **Username**: `sa`
+- **Password**: *(vazio)*
 
-- **Design moderno e responsivo**
-- **Integração completa** com a API REST
+## 📚 Documentação
 
-## Screenshots
-![Image](https://github.com/Alan-oliveir/userdept/blob/main/images/screenshot.png)
+- **[📖 Documentação da API (Scalar)](http://localhost:8080/scalar/docs)** - Documentação interativa completa
+- **[🔧 Documentação Técnica](docs/)** - Detalhes de implementação e arquitetura
 
-## Modelo conceitual
-![Image](https://github.com/Alan-oliveir/userdept/blob/main/images/dominio.png)
-
-## Mapeamento objeto-relacional
-![Image](https://github.com/Alan-oliveir/userdept/blob/main/images/objetos.png)
-
-## Estrutura do projeto
+## 🏗️ Estrutura do Projeto
 
 ```
 src/
@@ -94,74 +111,30 @@ src/
 │       └── import.sql
 ```
 
-## Requisitos
+## 🎓 Aprendizado
 
-- Java 17+ instalado
-- Maven instalado
-- Navegador moderno (Chrome, Firefox, Edge...)
+Este projeto foi feito durante aula da **DevSperior** de desenvolvimento web com Rest API e banco de dados usando Java e Spring Boot, posteriormente expandido:
+- Interface frontend completa
+- Documentação interativa
+- Melhorias na experiência do usuário
+- Design responsivo moderno
 
-## Como executar o projeto
+## 🤝 Contribuições
 
-### 1. Executar o Backend
+Contribuições são bem-vindas! Sinta-se à vontade para:
+- Reportar bugs
+- Sugerir melhorias
+- Enviar pull requests
 
-```bash
-# Via Maven
-mvn spring-boot:run
+## 🙏 Agradecimentos
 
-# Ou via IDE (IntelliJ)
-# Run As -> Spring Boot App
-```
+- **[DevSuperior](https://devsuperior.com.br)** - Curso base de Spring Boot
+- **[Claude AI](https://claude.ai)** - Auxílio no desenvolvimento do frontend
+- **[ChatGPT](https://openai.com/chatgpt)** - Apoio na documentação técnica
 
-### 2. Acessar a aplicação
+---
 
-- **API REST**: `http://localhost:8080/users`
-- **Interface Web**: `http://localhost:8080/`
-- **Console H2**: `http://localhost:8080/h2-console`
-
-### 3. Dados de acesso H2
-
-- **URL**: `jdbc:h2:mem:testdb`
-- **Username**: `sa`
-- **Password**: *( )*
-
-## Endpoints da API
-
-A API possui endpoints para listagem, cadastro e busca de usuários.  
-Detalhes completos estão disponíveis na [documentação da API](docs/api.md).
-
-## Etapas de construção
-
-### Backend  
-
-1. Criar o projeto Spring Boot
-2. Implementar o modelo de domínio
-3. Mapeamento objeto-relacional com JPA
-4. Configurar o banco de dados H2
-5. Criar os endpoints da REST API
-6. Adição da documentação da API com Scalar (Adicionado)
-
-### Frontend (Adicionado)
-
-6. Configurar CORS no Spring Boot
-7. Criar interface HTML responsiva
-8. Implementar estilos CSS modernos
-9. Desenvolver lógica JavaScript
-10. Integrar frontend com API REST
-
-## Funcionalidades da interface
-
-A interface web permite visualizar, cadastrar e buscar usuários de forma responsiva.  
-Veja a [documentação da interface](docs/frontend.md) para detalhes técnicos.  
-
-## Agradecimentos e Créditos
-
-- [DevSuperior - Escola de programação](https://devsuperior.com.br) - Curso base de Spring Boot
-- Interface frontend desenvolvida como extensão do projeto original
-- Ferramentas de Inteligência Artificial utilizadas como suporte:
-    - [Claude](https://claude.ai) — Auxílio na geração e revisão de código JavaScript e HTML
-    - [ChatGPT](https://openai.com/chatgpt) — Apoio na criação e organização da documentação técnica
-
----   
-
-### Contato:  
+### 📧 Contato
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alan-ogoncalves)
+
+**⭐ Se este projeto foi útil para você, considere dar uma estrela!**

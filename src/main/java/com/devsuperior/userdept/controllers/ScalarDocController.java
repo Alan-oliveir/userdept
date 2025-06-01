@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class ScalarDocController {
 
-    @GetMapping("/docs")
+    @GetMapping("scalar/docs")
     @ResponseBody
     public String scalarDocs() {
         return """

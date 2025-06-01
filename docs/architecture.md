@@ -156,3 +156,8 @@ public class CorsConfig {
 ## Monitoramento e Logs
 - Logs padrão do Spring Boot
 - Console H2 para debug
+
+---
+
+Desenvolvido por **Alan de Oliveira Gonçalves**   
+[GitHub](https://github.com/Alan-oliveir) | [LinkedIn](https://www.linkedin.com/in/alan-ogoncalves)  

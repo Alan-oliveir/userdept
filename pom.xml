@@ -38,7 +38,6 @@
 		</dependency>
 
 		<!-- OpenAPI 3 com SpringDoc -->
-		<!-- OpenAPI 3 com SpringDoc -->
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>

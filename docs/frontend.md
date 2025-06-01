@@ -44,3 +44,9 @@ static/
 - Modo escuro
 - Validações visuais mais sofisticadas
 - Refatorar JS em módulos
+
+---
+
+Desenvolvido por **Alan de Oliveira Gonçalves**   
+[GitHub](https://github.com/Alan-oliveir) | [LinkedIn](https://www.linkedin.com/in/alan-ogoncalves)  
+

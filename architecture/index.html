@@ -328,35 +328,11 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#modelo-fisico-tabelas" class="md-nav__link">
+  <a href="#modelo-fisico" class="md-nav__link">
     <span class="md-ellipsis">
-      Modelo Físico (Tabelas)
+      Modelo Físico
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Modelo Físico (Tabelas)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tb_department" class="md-nav__link">
-    <span class="md-ellipsis">
-      tb_department
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tb_user" class="md-nav__link">
-    <span class="md-ellipsis">
-      tb_user
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -607,35 +583,11 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#modelo-fisico-tabelas" class="md-nav__link">
+  <a href="#modelo-fisico" class="md-nav__link">
     <span class="md-ellipsis">
-      Modelo Físico (Tabelas)
+      Modelo Físico
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Modelo Físico (Tabelas)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tb_department" class="md-nav__link">
-    <span class="md-ellipsis">
-      tb_department
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tb_user" class="md-nav__link">
-    <span class="md-ellipsis">
-      tb_user
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -820,8 +772,9 @@ B --&gt; C["Database Layer&lt;br/&gt;H2 In-Memory"]
 <p><strong>Relacionamento</strong>: Muitos-para-Um (N:1)
 - Um usuário pertence a <strong>um</strong> departamento
 - Um departamento pode ter <strong>vários</strong> usuários</p>
-<h3 id="modelo-fisico-tabelas">Modelo Físico (Tabelas)<a class="headerlink" href="#modelo-fisico-tabelas" title="Permanent link">&para;</a></h3>
-<h4 id="tb_department">tb_department<a class="headerlink" href="#tb_department" title="Permanent link">&para;</a></h4>
+<h3 id="modelo-fisico">Modelo Físico<a class="headerlink" href="#modelo-fisico" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">tb_department</label><div class="tabbed-content"></div>
+</div>
 <table>
 <thead>
 <tr>
@@ -843,7 +796,8 @@ B --&gt; C["Database Layer&lt;br/&gt;H2 In-Memory"]
 </tr>
 </tbody>
 </table>
-<h4 id="tb_user">tb_user<a class="headerlink" href="#tb_user" title="Permanent link">&para;</a></h4>
+<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">tb_user</label><div class="tabbed-content"></div>
+</div>
 <table>
 <thead>
 <tr>
@@ -876,7 +830,7 @@ B --&gt; C["Database Layer&lt;br/&gt;H2 In-Memory"]
 </tbody>
 </table>
 <h2 id="dados-de-exemplo">Dados de Exemplo<a class="headerlink" href="#dados-de-exemplo" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Departamentos</label><div class="tabbed-content"></div>
+<div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Departamentos</label><div class="tabbed-content"></div>
 </div>
 <table>
 <thead>
@@ -908,7 +862,7 @@ B --&gt; C["Database Layer&lt;br/&gt;H2 In-Memory"]
 </tr>
 </tbody>
 </table>
-<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Usuários</label><div class="tabbed-content"></div>
+<div class="tabbed-set" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Usuários</label><div class="tabbed-content"></div>
 </div>
 <table>
 <thead>
@@ -941,15 +895,16 @@ B --&gt; C["Database Layer&lt;br/&gt;H2 In-Memory"]
 </tr>
 </tbody>
 </table>
-<hr />
 <h2 id="tecnologias-e-padroes">Tecnologias e Padrões<a class="headerlink" href="#tecnologias-e-padroes" title="Permanent link">&para;</a></h2>
 <h3 id="backend-spring-boot">Backend (Spring Boot)<a class="headerlink" href="#backend-spring-boot" title="Permanent link">&para;</a></h3>
-<p><strong>Padrões Utilizados</strong></p>
 <ul>
-<li><strong>REST API</strong><br />
-  Comunicação baseada em recursos via HTTP com controle de rotas e verbos.</li>
+<li>
+<p><strong>REST API</strong>: Comunicação baseada em recursos via HTTP com controle de rotas e verbos.</p>
+</li>
+<li>
+<p><strong>Principais Componentes</strong>: User e Department.</p>
+</li>
 </ul>
-<p><strong>Principais Componentes:</strong></p>
 <div class="highlight"><pre><span></span><code><span class="nd">@Entity</span>
 <span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">User</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nd">@ManyToOne</span>

@@ -6,17 +6,19 @@ Este guia te ajudará a executar o Sistema de Usuários e Departamentos em pouco
 
 Antes de começar, certifique-se de ter instalado:
 
-### Obrigatórios
-- **Java 17+** ([Download Oracle](https://www.oracle.com/java/technologies/downloads/) ou [OpenJDK](https://openjdk.org/))
-- **Maven 3.6+** ([Download Maven](https://maven.apache.org/download.cgi))
-- **Git** ([Download Git](https://git-scm.com/downloads))
+### Essenciais
+!!! warning "Obrigatórios"
+- **Java 17+** - [Oracle JDK](https://www.oracle.com/java/technologies/downloads/) ou [OpenJDK](https://openjdk.org/)
+- **Maven 3.6+** - [Download Maven](https://maven.apache.org/download.cgi)
+- **Git** - [Download Git](https://git-scm.com/downloads)
 
-### Opcionais (Recomendados)
-- **IntelliJ IDEA** ou **Eclipse** - IDE para desenvolvimento
+### Opcionais
+!!! info "Recomendados para melhor experiência"
+- **IDE**: IntelliJ IDEA, Eclipse ou VS Code
 - **Postman** - Para testar endpoints da API
-- **Navegador moderno** - Chrome, Firefox, Edge
+- **Navegador moderno** - Chrome, Firefox ou Edge  
 
-### Verificar Instalação
+## Verificar Instalação
 
 ```bash
 # Verificar Java
@@ -47,14 +49,14 @@ ls -la
 
 ## Executando o Projeto
 
-### Método 1: Via Maven (Recomendado)
+**Método 1: Via Maven (Recomendado)**
 
 ```bash
 # Na pasta raiz do projeto
 mvn spring-boot:run
 ```
 
-### Método 2: Via IDE
+**Método 2: Via IDE**
 
 === "IntelliJ IDEA"
     1. Abrir o projeto (`File` → `Open` → selecionar pasta `userdept`)
@@ -69,16 +71,6 @@ mvn spring-boot:run
     4. Localizar `UserdeptApplication.java` 
     5. Botão direito → `Run As` → `Spring Boot App`
 
-### Método 3: Via JAR
-
-```bash
-# Gerar o JAR
-mvn clean package -DskipTests
-
-# Executar o JAR
-java -jar target/userdept-0.0.1-SNAPSHOT.jar
-```
-
 ## Acessando a Aplicação
 
 Quando o servidor estiver rodando, você verá no console:
@@ -87,7 +79,7 @@ Quando o servidor estiver rodando, você verá no console:
 Started UserdeptApplication in X.XXX seconds
 ```
 
-### URLs Importantes
+**URLs Importantes**
 
 | Serviço | URL | Descrição |
 |---------|-----|-----------|
@@ -99,7 +91,7 @@ Started UserdeptApplication in X.XXX seconds
 
 ## Configurando o Banco H2
 
-### Acessar Console H2
+=== "Acessar Console H2"
 
 1. Acesse: [`http://localhost:8080/h2-console`](http://localhost:8080/h2-console)
 2. Use as seguintes configurações:
@@ -112,7 +104,7 @@ Started UserdeptApplication in X.XXX seconds
 
 3. Clique em **Connect** para acessar o banco em memória.
 
-### Dados Pré-carregados
+=== "Dados Pré-carregados"
 
 **Departamentos**
 
@@ -139,17 +131,17 @@ Started UserdeptApplication in X.XXX seconds
 
 ### 2. API REST (via Postman)
 
-#### Buscar todos usuários
+=== "Buscar todos usuários"
 ```http
 GET http://localhost:8080/users
 ```
 
-#### Buscar usuário por ID
+=== "Buscar usuário por ID"
 ```http
 GET http://localhost:8080/users/1
 ```
 
-#### Cadastrar novo usuário
+=== "Cadastrar novo usuário"
 ```http
 POST http://localhost:8080/users
 Content-Type: application/json
@@ -171,7 +163,7 @@ Content-Type: application/json
 
 ## Comandos Úteis
 
-### Desenvolvimento
+=== "Desenvolvimento"
 ```bash
 # Executar com profile específico
 mvn spring-boot:run -Dspring-boot.run.profiles=dev
@@ -186,7 +178,7 @@ mvn clean compile
 mvn clean package -DskipTests
 ```
 
-### Logs e Debug
+=== "Logs e Debug"
 ```bash
 # Executar com logs detalhados
 mvn spring-boot:run -Dspring-boot.run.arguments="--logging.level.com.devsuperior=DEBUG"
@@ -197,14 +189,14 @@ mvn spring-boot:run -Dspring-boot.run.arguments="--logging.level.org.hibernate.S
 
 ## Problemas Comuns
 
-### Porta já está em uso
+=== "Porta já está em uso"
 ```bash
 # Erro: Port 8080 was already in use
 # Solução: Mudar porta no application.properties
 server.port=8081
 ```
 
-### Java não encontrado
+=== "Java não encontrado"
 ```bash
 # Erro: 'java' is not recognized
 # Solução: Configurar JAVA_HOME
@@ -212,7 +204,7 @@ export JAVA_HOME=/path/to/java
 export PATH=$JAVA_HOME/bin:$PATH
 ```
 
-### Maven não baixa dependências
+=== "Maven não baixa dependências"
 ```bash
 # Limpar cache do Maven
 mvn dependency:purge-local-repository
@@ -221,20 +213,22 @@ mvn dependency:purge-local-repository
 mvn clean install -U
 ```
 
-### H2 Console não carrega
+=== "H2 Console não carrega"
 - Verificar se está acessando: http://localhost:8080/h2-console
 - Verificar JDBC URL: `jdbc:h2:mem:testdb`
 - Username: `sa`, Password: vazio
 
 ## Reiniciando a Aplicação
 
-Para parar:
-- **Maven**: `Ctrl + C` no terminal
-- **IDE**: Botão stop na aba de execução
+**Para parar**:  
 
-Para reiniciar:
-- Execute novamente qualquer um dos métodos acima
-- Os dados do H2 serão recarregados automaticamente
+- **Maven**: `Ctrl + C` no terminal  
+- **IDE**: Botão stop na aba de execução  
+
+**Para reiniciar**:  
+
+- Execute novamente qualquer um dos métodos acima  
+- Os dados do H2 serão recarregados automaticamente  
 
 ## Próximos Passos
 

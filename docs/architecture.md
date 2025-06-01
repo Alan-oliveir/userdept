@@ -35,15 +35,17 @@ User ────────→ Department
 - Um usuário pertence a **um** departamento
 - Um departamento pode ter **vários** usuários
 
-### Modelo Físico (Tabelas)
+### Modelo Físico 
 
-#### tb_department
+=== "tb_department"
+
 | Coluna | Tipo    | Descrição              |
 |--------|---------|------------------------|
 | id     | BIGINT  | Chave primária (AUTO)  |
 | name   | VARCHAR | Nome do departamento   |
 
-#### tb_user  
+=== "tb_user"
+
 | Coluna        | Tipo    | Descrição                    |
 |---------------|---------|------------------------------|
 | id            | BIGINT  | Chave primária (AUTO)        |
@@ -72,18 +74,13 @@ User ────────→ Department
 | Alex  | Informática   | alex@gmail.com    |
 | Ana   | Informática   | ana@gmail.com     |
 
----
-
 ## Tecnologias e Padrões
 
 ### Backend (Spring Boot)
 
-**Padrões Utilizados**
+- **REST API**: Comunicação baseada em recursos via HTTP com controle de rotas e verbos.
 
-- **REST API**  
-  Comunicação baseada em recursos via HTTP com controle de rotas e verbos.
-
-**Principais Componentes:**
+- **Principais Componentes**: User e Department.
 
 ```java
 @Entity

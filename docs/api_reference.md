@@ -10,7 +10,8 @@ O projeto utiliza **Scalar** para gerar documentação interativa da API REST, p
     - **Scalar (Interativa)**: [http://localhost:8080/scalar/docs](http://localhost:8080/scalar/docs)  
     - **OpenAPI JSON**: [http://localhost:8080/v3/api-docs](http://localhost:8080/v3/api-docs)
     
-### A documentação Scalar oferece:  
+=== "Documentação Scalar"    
+
 - Lista completa de endpoints  
 - Esquemas de requisição/resposta  
 - Testes interativos  
@@ -29,7 +30,8 @@ O projeto utiliza **Scalar** para gerar documentação interativa da API REST, p
 
 ## Modelos de Dados
 
-### User
+=== "User"  
+
 ```json
 {
   "id": 1,
@@ -42,7 +44,8 @@ O projeto utiliza **Scalar** para gerar documentação interativa da API REST, p
 }
 ```
 
-### Department
+=== "Department"  
+
 ```json
 {
   "id": 1,
@@ -52,7 +55,7 @@ O projeto utiliza **Scalar** para gerar documentação interativa da API REST, p
 
 ## Configurações Técnicas
 
-### CORS Configuration
+=== "CORS Configuration"
 
 A API está configurada para aceitar requisições do frontend:
 
@@ -71,24 +74,25 @@ public class CorsConfig implements WebMvcConfigurer {
 }
 ```
 
-**Origens Permitidas:**
-- `http://localhost:8080` (desenvolvimento)
-- Produção: configurar conforme deploy
+!!! info "Origens Permitidas"
+    - `http://localhost:8080` (desenvolvimento)  
+    - Produção: configurar conforme deploy  
 
-### Content-Type Headers
+=== "Content-Type Headers"
 
-**Requisições:**
+1. Requisições
 ```http
 Content-Type: application/json
 Accept: application/json
 ```
 
-**Respostas:**
+2. Respostas
 ```http
-Content-Type: application/json;charset=UTF-8
+Content-Type: application/json; charset=UTF-8
 ```
 
-### Configuração - application.properties
+=== "Properties"
+
 ```properties
 # Configurações do SpringDoc OpenAPI
 springdoc.api-docs.path=/v3/api-docs  
@@ -96,7 +100,8 @@ springdoc.swagger-ui.enabled=false
 springdoc.swagger-ui.path=/swagger-ui.html
 ```
 
-### Dependências Maven
+=== "Dependências Maven"
+
 ```xml
 <dependency>
     <groupId>org.springdoc</groupId>
@@ -107,7 +112,7 @@ springdoc.swagger-ui.path=/swagger-ui.html
 
 ## Padrões de Resposta
 
-### Sucesso (2xx)
+=== "Sucesso (2xx)"
 
 ```json
 // GET /users/{id} - 200 OK
@@ -145,8 +150,8 @@ springdoc.swagger-ui.path=/swagger-ui.html
   }
 ]
 ```
-
-### Erro (4xx/5xx)
+ 
+=== "Erro (4xx/5xx)"
 
 ```json
 // 404 Not Found
@@ -188,6 +193,7 @@ springdoc.swagger-ui.path=/swagger-ui.html
 ## Exemplos de Requisições
 
 ### Criar Usuário
+
 ```bash
 curl -X POST http://localhost:8080/users \
   -H "Content-Type: application/json" \
@@ -202,12 +208,14 @@ curl -X POST http://localhost:8080/users \
 ```
 
 ### Buscar Todos os Usuários
+
 ```bash
 curl -X GET http://localhost:8080/users \
   -H "Accept: application/json"
 ```
 
 ### Buscar Usuário por ID
+
 ```bash
 curl -X GET http://localhost:8080/users/1 \
   -H "Accept: application/json"

@@ -13,10 +13,8 @@
       
       
       
-        <link rel="prev" href="../getting_started/">
+        <link rel="prev" href="../contributing/">
       
-      
-        <link rel="next" href="../frontend/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -24,7 +22,7 @@
     
     
       
-        <title>Arquitetura - Sistema Usuários e Departamentos</title>
+        <title>Uso de IA - Sistema Usuários e Departamentos</title>
       
     
     
@@ -74,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#arquitetura-do-sistema" class="md-skip">
+        <a href="#documento-de-uso-de-inteligencia-artificial-no-desenvolvimento" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -110,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Arquitetura
+              Uso de IA
             
           </span>
         </div>
@@ -247,32 +245,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Arquitetura
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../architecture/" class="md-nav__link">
         
   
   
@@ -283,203 +259,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Índice">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Índice
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#arquitetura-geral" class="md-nav__link">
-    <span class="md-ellipsis">
-      Arquitetura Geral
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modelo-de-dados" class="md-nav__link">
-    <span class="md-ellipsis">
-      Modelo de Dados
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Modelo de Dados">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#modelo-conceitual" class="md-nav__link">
-    <span class="md-ellipsis">
-      Modelo Conceitual
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modelo-fisico" class="md-nav__link">
-    <span class="md-ellipsis">
-      Modelo Físico
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dados-de-exemplo" class="md-nav__link">
-    <span class="md-ellipsis">
-      Dados de Exemplo
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tecnologias-e-padroes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tecnologias e Padrões
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Tecnologias e Padrões">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#backend-spring-boot" class="md-nav__link">
-    <span class="md-ellipsis">
-      Backend (Spring Boot)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#frontend-spa-simples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Frontend (SPA Simples)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fluxos-de-operacao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Fluxos de Operação
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Fluxos de Operação">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-listagem-de-usuarios" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Listagem de Usuários
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-busca-por-id" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Busca por ID
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-cadastro-de-usuario" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Cadastro de Usuário
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuracoes-de-seguranca" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configurações de Segurança
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Configurações de Segurança">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#cors-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      CORS Configuration
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#h2-database-security" class="md-nav__link">
-    <span class="md-ellipsis">
-      H2 Database Security
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#consideracoes-de-performance" class="md-nav__link">
-    <span class="md-ellipsis">
-      Considerações de Performance
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#monitoramento-e-logs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Monitoramento e Logs
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -554,10 +333,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../ai_usage/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Uso de IA
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -568,6 +369,146 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introdução
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ferramentas-de-ia-utilizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ferramentas de IA Utilizadas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ferramentas de IA Utilizadas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#claude-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      Claude AI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chatgpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChatGPT
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aplicacoes-da-ia-no-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aplicações da IA no Projeto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#componentes-desenvolvidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Componentes Desenvolvidos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Componentes Desenvolvidos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frontend-spa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frontend (SPA)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentação
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#revisao-e-validacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Revisão e Validação
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limitacoes-e-escopo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limitações e Escopo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#responsabilidade-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      Responsabilidade Final
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transparencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transparência
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -599,37 +540,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#arquitetura-geral" class="md-nav__link">
+  <a href="#introducao" class="md-nav__link">
     <span class="md-ellipsis">
-      Arquitetura Geral
+      Introdução
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modelo-de-dados" class="md-nav__link">
+  <a href="#ferramentas-de-ia-utilizadas" class="md-nav__link">
     <span class="md-ellipsis">
-      Modelo de Dados
+      Ferramentas de IA Utilizadas
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Modelo de Dados">
+    <nav class="md-nav" aria-label="Ferramentas de IA Utilizadas">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#modelo-conceitual" class="md-nav__link">
+  <a href="#claude-ai" class="md-nav__link">
     <span class="md-ellipsis">
-      Modelo Conceitual
+      Claude AI
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#modelo-fisico" class="md-nav__link">
+  <a href="#chatgpt" class="md-nav__link">
     <span class="md-ellipsis">
-      Modelo Físico
+      ChatGPT
     </span>
   </a>
   
@@ -641,37 +582,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#dados-de-exemplo" class="md-nav__link">
+  <a href="#aplicacoes-da-ia-no-projeto" class="md-nav__link">
     <span class="md-ellipsis">
-      Dados de Exemplo
+      Aplicações da IA no Projeto
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#tecnologias-e-padroes" class="md-nav__link">
+  <a href="#componentes-desenvolvidos" class="md-nav__link">
     <span class="md-ellipsis">
-      Tecnologias e Padrões
+      Componentes Desenvolvidos
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Tecnologias e Padrões">
+    <nav class="md-nav" aria-label="Componentes Desenvolvidos">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#backend-spring-boot" class="md-nav__link">
+  <a href="#frontend-spa" class="md-nav__link">
     <span class="md-ellipsis">
-      Backend (Spring Boot)
+      Frontend (SPA)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#frontend-spa-simples" class="md-nav__link">
+  <a href="#documentacao" class="md-nav__link">
     <span class="md-ellipsis">
-      Frontend (SPA Simples)
+      Documentação
     </span>
   </a>
   
@@ -683,93 +624,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#fluxos-de-operacao" class="md-nav__link">
+  <a href="#revisao-e-validacao" class="md-nav__link">
     <span class="md-ellipsis">
-      Fluxos de Operação
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Fluxos de Operação">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-listagem-de-usuarios" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Listagem de Usuários
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-busca-por-id" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Busca por ID
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-cadastro-de-usuario" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Cadastro de Usuário
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuracoes-de-seguranca" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configurações de Segurança
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Configurações de Segurança">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#cors-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      CORS Configuration
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#h2-database-security" class="md-nav__link">
-    <span class="md-ellipsis">
-      H2 Database Security
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#consideracoes-de-performance" class="md-nav__link">
-    <span class="md-ellipsis">
-      Considerações de Performance
+      Revisão e Validação
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#monitoramento-e-logs" class="md-nav__link">
+  <a href="#limitacoes-e-escopo" class="md-nav__link">
     <span class="md-ellipsis">
-      Monitoramento e Logs
+      Limitações e Escopo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#responsabilidade-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      Responsabilidade Final
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transparencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transparência
     </span>
   </a>
   
@@ -791,235 +675,82 @@
 
 
 
-<h1 id="arquitetura-do-sistema">Arquitetura do Sistema<a class="headerlink" href="#arquitetura-do-sistema" title="Permanent link">&para;</a></h1>
-<p>Este documento descreve a arquitetura técnica do sistema de gerenciamento de usuários e departamentos.</p>
-<h2 id="arquitetura-geral">Arquitetura Geral<a class="headerlink" href="#arquitetura-geral" title="Permanent link">&para;</a></h2>
-<p>O sistema segue uma arquitetura em camadas (Layered Architecture) com separação clara de responsabilidades:</p>
-<pre class="mermaid"><code>graph TD
-A["Frontend (Static)&lt;br/&gt;HTML5/CSS3/JavaScript"] --&gt; B["Controller Layer&lt;br/&gt;REST Controllers"]
-B --&gt; C["Database Layer&lt;br/&gt;H2 In-Memory"]
-
-    style A fill:#e1f5fe,stroke:#01579b,stroke-width:2px
-    style B fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
-    style C fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px</code></pre>
-<h2 id="modelo-de-dados">Modelo de Dados<a class="headerlink" href="#modelo-de-dados" title="Permanent link">&para;</a></h2>
-<h3 id="modelo-conceitual">Modelo Conceitual<a class="headerlink" href="#modelo-conceitual" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>User ────────→ Department
-  │               │
-  │               │
-  ↓               ↓
-- id            - id  
-- name          - name
-- email         
-- department_id (FK)
-</code></pre></div>
-<p><strong>Relacionamento</strong>: Muitos-para-Um (N:1)
-- Um usuário pertence a <strong>um</strong> departamento
-- Um departamento pode ter <strong>vários</strong> usuários</p>
-<h3 id="modelo-fisico">Modelo Físico<a class="headerlink" href="#modelo-fisico" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">tb_department</label><div class="tabbed-content"></div>
-</div>
-<table>
-<thead>
-<tr>
-<th>Coluna</th>
-<th>Tipo</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>id</td>
-<td>BIGINT</td>
-<td>Chave primária (AUTO)</td>
-</tr>
-<tr>
-<td>name</td>
-<td>VARCHAR</td>
-<td>Nome do departamento</td>
-</tr>
-</tbody>
-</table>
-<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">tb_user</label><div class="tabbed-content"></div>
-</div>
-<table>
-<thead>
-<tr>
-<th>Coluna</th>
-<th>Tipo</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>id</td>
-<td>BIGINT</td>
-<td>Chave primária (AUTO)</td>
-</tr>
-<tr>
-<td>name</td>
-<td>VARCHAR</td>
-<td>Nome do usuário</td>
-</tr>
-<tr>
-<td>email</td>
-<td>VARCHAR</td>
-<td>Email do usuário</td>
-</tr>
-<tr>
-<td>department_id</td>
-<td>BIGINT</td>
-<td>Chave estrangeira (FK)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="dados-de-exemplo">Dados de Exemplo<a class="headerlink" href="#dados-de-exemplo" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Departamentos</label><div class="tabbed-content"></div>
-</div>
-<table>
-<thead>
-<tr>
-<th>ID</th>
-<th>Nome</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>Gestão</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Informática</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Vendas</td>
-</tr>
-<tr>
-<td>4</td>
-<td>Marketing</td>
-</tr>
-<tr>
-<td>5</td>
-<td>Financeiro</td>
-</tr>
-</tbody>
-</table>
-<div class="tabbed-set" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Usuários</label><div class="tabbed-content"></div>
-</div>
-<table>
-<thead>
-<tr>
-<th>Nome</th>
-<th>Departamento</th>
-<th>Email</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Maria</td>
-<td>Gestão</td>
-<td>maria@gmail.com</td>
-</tr>
-<tr>
-<td>Bob</td>
-<td>Gestão</td>
-<td>bob@gmail.com</td>
-</tr>
-<tr>
-<td>Alex</td>
-<td>Informática</td>
-<td>alex@gmail.com</td>
-</tr>
-<tr>
-<td>Ana</td>
-<td>Informática</td>
-<td>ana@gmail.com</td>
-</tr>
-</tbody>
-</table>
-<h2 id="tecnologias-e-padroes">Tecnologias e Padrões<a class="headerlink" href="#tecnologias-e-padroes" title="Permanent link">&para;</a></h2>
-<h3 id="backend-spring-boot">Backend (Spring Boot)<a class="headerlink" href="#backend-spring-boot" title="Permanent link">&para;</a></h3>
+<h1 id="documento-de-uso-de-inteligencia-artificial-no-desenvolvimento">Documento de Uso de Inteligência Artificial no Desenvolvimento<a class="headerlink" href="#documento-de-uso-de-inteligencia-artificial-no-desenvolvimento" title="Permanent link">&para;</a></h1>
+<h2 id="introducao">Introdução<a class="headerlink" href="#introducao" title="Permanent link">&para;</a></h2>
+<p>Este documento descreve o uso de ferramentas de Inteligência Artificial (IA) durante o desenvolvimento deste projeto, visando garantir a transparência no processo de criação e evolução da aplicação. Este registro detalha como as ferramentas de IA contribuíram para o desenvolvimento da interface web e documentação do sistema.</p>
+<h2 id="ferramentas-de-ia-utilizadas">Ferramentas de IA Utilizadas<a class="headerlink" href="#ferramentas-de-ia-utilizadas" title="Permanent link">&para;</a></h2>
+<h3 id="claude-ai">Claude AI<a class="headerlink" href="#claude-ai" title="Permanent link">&para;</a></h3>
 <ul>
-<li>
-<p><strong>REST API</strong>: Comunicação baseada em recursos via HTTP com controle de rotas e verbos.</p>
-</li>
-<li>
-<p><strong>Principais Componentes</strong>: User e Department.</p>
+<li><strong>Fornecedor</strong>: Anthropic</li>
+<li><strong>Descrição do uso</strong>: <ul>
+<li>Auxílio no desenvolvimento do frontend (Single Page Application) com geração de código HTML, CSS e JavaScript, criação de interface responsiva e moderna, implementação da integração com API REST. </li>
+<li>Instruções para implementação da documentação da API com Scalar e documentação geral do projeto com MkDocs.</li>
+</ul>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="nd">@Entity</span>
-<span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">User</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nd">@ManyToOne</span>
-<span class="w">    </span><span class="nd">@JoinColumn</span><span class="p">(</span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;department_id&quot;</span><span class="p">)</span>
-<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">Department</span><span class="w"> </span><span class="n">department</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nd">@Entity</span><span class="w">  </span>
-<span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Department</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nd">@OneToMany</span><span class="p">(</span><span class="n">mappedBy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;department&quot;</span><span class="p">)</span>
-<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="n">User</span><span class="o">&gt;</span><span class="w"> </span><span class="n">users</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-<h3 id="frontend-spa-simples">Frontend (SPA Simples)<a class="headerlink" href="#frontend-spa-simples" title="Permanent link">&para;</a></h3>
-<p><strong>Arquitetura Utilizada</strong></p>
+<h3 id="chatgpt">ChatGPT<a class="headerlink" href="#chatgpt" title="Permanent link">&para;</a></h3>
 <ul>
-<li>
-<p><strong>Single Page Application (SPA)</strong><br />
-  Toda a aplicação roda em uma única página HTML, carregando e atualizando conteúdo dinamicamente sem recarregar a página inteira.</p>
-</li>
-<li>
-<p><strong>Event-Driven</strong><br />
-  A navegação e as interações são controladas por eventos (ex: cliques, envio de formulários, carregamento de dados).</p>
-</li>
-<li>
-<p><strong>AJAX/Fetch API</strong><br />
-  Comunicação assíncrona com o backend usando a API <code>fetch</code>, permitindo buscar e enviar dados sem recarregar a página.</p>
+<li><strong>Fornecedor</strong>: OpenAI</li>
+<li><strong>Descrição do uso</strong>:<ul>
+<li>Melhoria e formatação de conteúdo da documentação geral, refinamento de textos e estruturação de informações.</li>
+</ul>
 </li>
 </ul>
-<p><strong>Fluxo de Dados:</strong>
-<div class="highlight"><pre><span></span><code>User Action → JavaScript → Fetch API → Spring Controller → Repository → Database
-                    ↑                                                      ↓
-Frontend Update ←──┘                                           JSON Response
-</code></pre></div></p>
-<h2 id="fluxos-de-operacao">Fluxos de Operação<a class="headerlink" href="#fluxos-de-operacao" title="Permanent link">&para;</a></h2>
-<h3 id="1-listagem-de-usuarios">1. Listagem de Usuários<a class="headerlink" href="#1-listagem-de-usuarios" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>GET /users → UserController.findAll() → userRepository.findAll() → JSON Response
-</code></pre></div>
-<h3 id="2-busca-por-id">2. Busca por ID<a class="headerlink" href="#2-busca-por-id" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>GET /users/{id} → UserController.findById() → userRepository.findById() → JSON Response
-</code></pre></div>
-<h3 id="3-cadastro-de-usuario">3. Cadastro de Usuário<a class="headerlink" href="#3-cadastro-de-usuario" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>POST /users → UserController.insert() → userRepository.save() → JSON Response
-</code></pre></div>
-<h2 id="configuracoes-de-seguranca">Configurações de Segurança<a class="headerlink" href="#configuracoes-de-seguranca" title="Permanent link">&para;</a></h2>
-<h3 id="cors-configuration">CORS Configuration<a class="headerlink" href="#cors-configuration" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="nd">@Configuration</span>
-<span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">CorsConfig</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="c1">// Permite acesso do frontend à API</span>
-<span class="w">    </span><span class="c1">// Origins permitidas: localhost:8080</span>
-<span class="p">}</span>
-</code></pre></div>
-<h3 id="h2-database-security">H2 Database Security<a class="headerlink" href="#h2-database-security" title="Permanent link">&para;</a></h3>
+<h2 id="aplicacoes-da-ia-no-projeto">Aplicações da IA no Projeto<a class="headerlink" href="#aplicacoes-da-ia-no-projeto" title="Permanent link">&para;</a></h2>
+<p>As principais áreas onde houve auxílio de IA incluem:</p>
 <ul>
-<li><strong>Perfil</strong>: Desenvolvimento/Teste</li>
-<li><strong>Acesso</strong>: Console habilitado</li>
-<li><strong>Persistência</strong>: Em memória (dados perdidos ao reiniciar)</li>
+<li>[x] Geração de código frontend</li>
+<li>[x] Criação de interface de usuário responsiva</li>
+<li>[x] Integração JavaScript com API REST</li>
+<li>[x] Documentação da API com Scalar</li>
+<li>[x] Documentação técnica com MkDocs</li>
+<li>[x] Escrita e formatação de documentação</li>
+<li>[ ] Desenvolvimento do backend Java/Spring Boot</li>
+<li>[ ] Criação de testes automatizados</li>
 </ul>
-<h2 id="consideracoes-de-performance">Considerações de Performance<a class="headerlink" href="#consideracoes-de-performance" title="Permanent link">&para;</a></h2>
+<h2 id="componentes-desenvolvidos">Componentes Desenvolvidos<a class="headerlink" href="#componentes-desenvolvidos" title="Permanent link">&para;</a></h2>
+<h3 id="frontend-spa">Frontend (SPA)<a class="headerlink" href="#frontend-spa" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Banco em memória (rápido para desenvolvimento)</li>
-<li>Sem cache implementado</li>
+<li><strong>Interface HTML</strong>: Estrutura da página web</li>
+<li><strong>Estilos CSS</strong>: Design moderno e responsivo para desktop e mobile</li>
+<li><strong>JavaScript</strong>: Lógica de integração com API REST, manipulação do DOM, validação de formulários</li>
+<li><strong>Experiência do usuário</strong>: Feedback visual, mensagens de erro/sucesso, atualização automática</li>
 </ul>
-<h2 id="monitoramento-e-logs">Monitoramento e Logs<a class="headerlink" href="#monitoramento-e-logs" title="Permanent link">&para;</a></h2>
+<h3 id="documentacao">Documentação<a class="headerlink" href="#documentacao" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Logs padrão do Spring Boot</li>
-<li>Console H2 para debug</li>
+<li><strong>Configuração Scalar</strong>: Setup para documentação interativa da API</li>
+<li><strong>Documentação MkDocs</strong>: Estruturação de documentação técnica</li>
 </ul>
+<h2 id="revisao-e-validacao">Revisão e Validação<a class="headerlink" href="#revisao-e-validacao" title="Permanent link">&para;</a></h2>
+<p>Todo o conteúdo gerado com o auxílio de ferramentas de IA foi:</p>
+<ul>
+<li>Revisto manualmente pelo desenvolvedor</li>
+<li>Testado para garantir funcionamento adequado</li>
+<li>Integrado e validado com o backend Spring Boot existente</li>
+<li>Ajustado conforme necessidades específicas do projeto</li>
+</ul>
+<h2 id="limitacoes-e-escopo">Limitações e Escopo<a class="headerlink" href="#limitacoes-e-escopo" title="Permanent link">&para;</a></h2>
+<p>É importante destacar que:</p>
+<ul>
+<li>O <strong>backend Java/Spring Boot</strong> foi desenvolvido inteiramente sem auxílio de IA</li>
+<li>A <strong>lógica de negócio</strong> e <strong>arquitetura do sistema</strong> são de autoria humana</li>
+<li>As ferramentas de IA foram utilizadas exclusivamente para auxiliar no <strong>desenvolvimento frontend</strong> e <strong>documentação</strong></li>
+<li>Créditos pelo desenvolvimento do backend são do curso <strong>DevSuperior</strong>, com melhorias implementadas em relação ao código do projeto original. </li>
+</ul>
+<h2 id="responsabilidade-final">Responsabilidade Final<a class="headerlink" href="#responsabilidade-final" title="Permanent link">&para;</a></h2>
+<p>Embora ferramentas de Inteligência Artificial tenham sido empregadas como suporte no desenvolvimento da interface e documentação, <strong>as decisões de arquitetura, implementação do backend e validação final</strong> foram realizadas integralmente pelo desenvolvedor, que assume a responsabilidade pelo funcionamento do projeto.</p>
+<h2 id="transparencia">Transparência<a class="headerlink" href="#transparencia" title="Permanent link">&para;</a></h2>
+<p>Este documento visa garantir:</p>
+<ul>
+<li>Transparência total sobre o uso de IA no projeto</li>
+<li>Clareza sobre quais componentes utilizaram auxílio de IA</li>
+<li>Reconhecimento das contribuições das ferramentas utilizadas</li>
+<li>Manutenção da integridade e responsabilidade do desenvolvimento</li>
+</ul>
+<p><strong>Última atualização</strong>: Junho 2025</p>
 <hr />
 <p>Desenvolvido por <strong>Alan de Oliveira Gonçalves</strong> <br />
-<a href="https://github.com/Alan-oliveir">GitHub</a> | <a href="https://www.linkedin.com/in/alan-ogoncalves">LinkedIn</a>  </p>
+<a href="https://github.com/Alan-oliveir">GitHub</a> | <a href="https://www.linkedin.com/in/alan-ogoncalves">LinkedIn</a> </p>
 
 
 

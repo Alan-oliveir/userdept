@@ -1,0 +1,42 @@
+site_name: Sistema Usuários e Departamentos
+site_description: Sistema completo de gerenciamento de usuários e departamentos
+site_author: Alan de Oliveira Gonçalves
+
+theme:
+  name: material
+  language: pt-BR
+  features:
+    - navigation.instant
+    - content.code.annotate
+  palette:
+    scheme: default
+
+nav:
+  - Home: index.md
+  - Guia Inicial: getting_started.md
+  - Arquitetura: architecture.md
+  - Frontend: frontend.md
+  - API Reference: api_reference.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - footnotes
+  - admonition
+  - codehilite
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+  - pymdownx.tabbed
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Alan-oliveir
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/alan-ogoncalves

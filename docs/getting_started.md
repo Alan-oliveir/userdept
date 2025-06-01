@@ -100,29 +100,30 @@ Started UserdeptApplication in X.XXX seconds
 ## Configurando o Banco H2
 
 ### Acessar Console H2
-1. Ir para: http://localhost:8080/h2-console
-2. Usar as configurações:
 
-```
-JDBC URL: jdbc:h2:mem:testdb
-Username: sa  
-Password: (deixar vazio)
-```
+1. Acesse: [`http://localhost:8080/h2-console`](http://localhost:8080/h2-console)
+2. Use as seguintes configurações:
 
-3. Clicar em **Connect**
+    ```
+    JDBC URL: jdbc:h2:mem:testdb
+    Username: sa
+    Password: (deixar vazio)
+    ```
+
+3. Clique em **Connect** para acessar o banco em memória.
 
 ### Dados Pré-carregados
 
-O sistema já vem com dados de exemplo:
+**Departamentos**
 
-**Departamentos:**
 - Gestão
-- Informática  
+- Informática
 - Vendas
 - Marketing
 - Financeiro
 
-**Usuários:**
+**Usuários**
+
 - Maria (Gestão)
 - Bob (Gestão)
 - Alex (Informática)

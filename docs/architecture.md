@@ -6,23 +6,14 @@ Este documento descreve a arquitetura técnica do sistema de gerenciamento de us
 
 O sistema segue uma arquitetura em camadas (Layered Architecture) com separação clara de responsabilidades:
 
-```
-┌─────────────────┐
-│   Frontend      │ ← HTML5/CSS3/JavaScript
-│   (Static)      │
-├─────────────────┤
-│   Controller    │ ← REST Controllers
-│   Layer         │
-├─────────────────┤
-│   Service       │ ← Business Logic (futuro)
-│   Layer         │
-├─────────────────┤
-│   Repository    │ ← Data Access Layer
-│   Layer         │
-├─────────────────┤
-│   Database      │ ← H2 In-Memory
-│   Layer         │
-└─────────────────┘
+```mermaid
+graph TD
+A["Frontend (Static)<br/>HTML5/CSS3/JavaScript"] --> B["Controller Layer<br/>REST Controllers"]
+B --> C["Database Layer<br/>H2 In-Memory"]
+
+    style A fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    style B fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    style C fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px
 ```
 
 ## Modelo de Dados
@@ -60,30 +51,37 @@ User ────────→ Department
 | email         | VARCHAR | Email do usuário             |
 | department_id | BIGINT  | Chave estrangeira (FK)       |
 
-### Dados de Exemplo
+## Dados de Exemplo
 
-**Departamentos:**
-- 1 - Gestão
-- 2 - Informática  
-- 3 - Vendas
-- 4 - Marketing
-- 5 - Financeiro
+=== "Departamentos"
 
-**Usuários:**
-- Maria (Gestão) - maria@gmail.com
-- Bob (Gestão) - bob@gmail.com
-- Alex (Informática) - alex@gmail.com
-- Ana (Informática) - ana@gmail.com
+| ID | Nome         |
+|----|--------------|
+| 1  | Gestão       |
+| 2  | Informática  |
+| 3  | Vendas       |
+| 4  | Marketing    |
+| 5  | Financeiro   |
+
+=== "Usuários"
+
+| Nome  | Departamento  | Email             |
+|-------|---------------|-------------------|
+| Maria | Gestão        | maria@gmail.com   |
+| Bob   | Gestão        | bob@gmail.com     |
+| Alex  | Informática   | alex@gmail.com    |
+| Ana   | Informática   | ana@gmail.com     |
+
+---
 
 ## Tecnologias e Padrões
 
 ### Backend (Spring Boot)
 
-**Padrões Utilizados:**
-- **Repository Pattern** - Abstração da camada de dados
-- **REST API** - Comunicação padronizada HTTP
-- **DTO Pattern** - Transferência de dados (implícito via JPA)
-- **Dependency Injection** - Inversão de controle
+**Padrões Utilizados**
+
+- **REST API**  
+  Comunicação baseada em recursos via HTTP com controle de rotas e verbos.
 
 **Principais Componentes:**
 
@@ -104,10 +102,16 @@ public class Department {
 
 ### Frontend (SPA Simples)
 
-**Arquitetura:**
-- **Single Page Application** - Uma página, múltiplas funcionalidades
-- **Event-Driven** - Baseado em eventos do usuário
-- **AJAX/Fetch** - Comunicação assíncrona com API
+**Arquitetura Utilizada**
+
+- **Single Page Application (SPA)**  
+  Toda a aplicação roda em uma única página HTML, carregando e atualizando conteúdo dinamicamente sem recarregar a página inteira.
+
+- **Event-Driven**  
+  A navegação e as interações são controladas por eventos (ex: cliques, envio de formulários, carregamento de dados).
+
+- **AJAX/Fetch API**  
+  Comunicação assíncrona com o backend usando a API `fetch`, permitindo buscar e enviar dados sem recarregar a página.
 
 **Fluxo de Dados:**
 ```

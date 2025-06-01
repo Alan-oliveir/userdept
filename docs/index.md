@@ -2,6 +2,14 @@
 
 Bem-vindo à documentação completa do **Sistema de Usuários e Departamentos** - um projeto full-stack desenvolvido com Java Spring Boot e interface web moderna.
 
+## Navegação da Documentação
+
+- **[Guia de Início](getting_started.md)** - Como executar o projeto
+- **[Arquitetura](architecture.md)** - Detalhes técnicos e modelo de dados
+- **[Frontend](frontend.md)** - Documentação da interface web
+- **[API Reference](api_reference.md)** - Configurações e link para Scalar
+- **[Contribuição](contributing.md)** - Como contribuir com o projeto
+
 ## Visão Geral
 
 Este sistema demonstra a implementação de uma **API REST completa** integrada com uma **interface web responsiva**, oferecendo funcionalidades de gerenciamento de usuários e seus respectivos departamentos.
@@ -44,26 +52,29 @@ Este sistema demonstra a implementação de uma **API REST completa** integrada 
 
 ## Demonstração
 
-![Interface do Sistema](https://github.com/Alan-oliveir/userdept/blob/main/images/screenshot.png)
+![Interface do Sistema](https://raw.githubusercontent.com/Alan-oliveir/userdept/main/images/screenshot.png)
 
 *Interface principal mostrando listagem de usuários e formulário de cadastro*
 
 ## Casos de Uso
 
 1. **Visualização de Usuários**
-   - Lista todos os usuários cadastrados
-   - Exibe departamento de cada usuário
-   - Interface responsiva e moderna
+
+    - Lista todos os usuários cadastrados
+    - Exibe departamento de cada usuário
+    - Interface responsiva e moderna
 
 2. **Cadastro de Usuários**
-   - Formulário validado
-   - Seleção de departamento
-   - Feedback visual de sucesso/erro
+
+    - Formulário validado
+    - Seleção de departamento
+    - Feedback visual de sucesso/erro
 
 3. **Busca Individual**
-   - Busca por ID específico
-   - Tratamento de erros
-   - Exibição de resultados dinâmica
+
+    - Busca por ID específico
+    - Tratamento de erros
+    - Exibição de resultados dinâmica
 
 ## Arquitetura do Sistema
 
@@ -75,14 +86,6 @@ graph TB
     B --> E[Scalar Documentation]
     F[MkDocs] --> G[Technical Documentation]
 ```
-
-## Navegação da Documentação
-
-- **[Guia de Início](getting-started.md)** - Como executar o projeto
-- **[Arquitetura](architecture.md)** - Detalhes técnicos e modelo de dados
-- **[Frontend](frontend.md)** - Documentação da interface web
-- **[API Reference](api-reference.md)** - Configurações e link para Scalar
-- **[Contribuição](contributing.md)** - Como contribuir com o projeto
 
 ## Contexto Educacional
 
@@ -110,7 +113,7 @@ Este projeto foi feito durante aula da **DevSuperior** de desenvolvimento web co
 
 ## Próximos Passos
 
-Pronto para começar? Visite o **[Guia de Início](getting-started.md)** para instruções detalhadas de execução.
+Pronto para começar? Visite o **[Guia de Início](getting_started.md)** para instruções detalhadas de execução.
 
 ---
 

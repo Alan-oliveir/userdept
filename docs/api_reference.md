@@ -10,11 +10,11 @@ O projeto utiliza **Scalar** para gerar documentação interativa da API REST, p
     - **Scalar (Interativa)**: [http://localhost:8080/scalar/docs](http://localhost:8080/scalar/docs)  
     - **OpenAPI JSON**: [http://localhost:8080/v3/api-docs](http://localhost:8080/v3/api-docs)
     
-    A documentação Scalar oferece:
-    - Lista completa de endpoints
-    - Esquemas de requisição/resposta
-    - Testes interativos
-    - Exemplos de código
+### A documentação Scalar oferece:  
+- Lista completa de endpoints  
+- Esquemas de requisição/resposta  
+- Testes interativos  
+- Exemplos de código  
 
 ## Endpoints Resumidos
 
@@ -220,13 +220,12 @@ curl -X GET http://localhost:8080/users/1 \
     - Banco de dados em memória (dados perdidos ao reiniciar)  
     - Sem paginação para grandes volumes de dados  
 
-## Suporte
+## Dúvidas e Suporte
 
-Para dúvidas sobre a API:
-1. **Consulte a documentação interativa**: [Scalar](http://localhost:8080/scalar/docs)
-2. **Veja os exemplos** nesta documentação
-3. **Abra uma issue** no GitHub
-4. **Entre em contato** via LinkedIn
+1. Consulte a documentação interativa: [Scalar](http://localhost:8080/scalar/docs)  
+2. Veja os exemplos nesta documentação  
+3. Abra uma issue no GitHub  
+4. Entre em contato via LinkedIn  
 
 ---
 

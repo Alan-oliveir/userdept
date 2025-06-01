@@ -24,7 +24,7 @@ static/
 
 ## Capturas de Tela
 
-![Screenshot](https://github.com/Alan-oliveir/userdept/blob/main/images/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/Alan-oliveir/userdept/main/images/screenshot.png)
 
 ## Tecnologias Usadas
 

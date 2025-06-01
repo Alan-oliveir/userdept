@@ -17,6 +17,8 @@ nav:
   - Arquitetura: architecture.md
   - Frontend: frontend.md
   - API Reference: api_reference.md
+  - Contribuindo: contributing.md
+  - Uso de IA: ai_usage.md
 
 markdown_extensions:
   - toc:

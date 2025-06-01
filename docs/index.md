@@ -9,6 +9,7 @@ Bem-vindo à documentação completa do **Sistema de Usuários e Departamentos**
 - **[Frontend](frontend.md)** - Documentação da interface web
 - **[API Reference](api_reference.md)** - Configurações e link para Scalar
 - **[Contribuição](contributing.md)** - Como contribuir com o projeto
+- **[Uso de IA](ai_usage.md)** - Registro do uso de ferramentas de IA  
 
 ## Visão Geral
 

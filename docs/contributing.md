@@ -1,6 +1,7 @@
 # Guia de Contribuição
 
-Obrigado pelo interesse em contribuir com o **Sistema de Usuários e Departamentos**! Este documento te guiará através do processo de contribuição.
+Obrigado pelo interesse em contribuir com o **Sistema de Usuários e Departamentos**! Este documento te guiará através 
+do processo de contribuição.
 
 ## Como Contribuir
 
@@ -12,9 +13,9 @@ Existem várias maneiras de contribuir com este projeto:
 -  **Enviar código** (correções, features, testes)
 -  **Melhorar o design** da interface
 
-## Configurando o Ambiente de Desenvolvimento
+## Configuração do Ambiente
 
-### 1. Fork e Clone
+=== "Fork e Clone"
 
 ```bash
 # Fork do repositório no GitHub (botão Fork)
@@ -26,14 +27,14 @@ cd userdept
 git remote add upstream https://github.com/Alan-oliveir/userdept.git
 ```
 
-### 2. Configurar Ambiente
+=== "Configurar Ambiente de Desenvolvimento"
 
-Siga o **[Guia de Início](getting-started.md)** para configurar:
-- Java 17+
-- Maven 
-- IDE de sua preferência
+!!! info "Siga o **[Guia de Início](getting-started.md)** para configurar"
+    - Java 17+
+    - Maven 
+    - IDE de sua preferência
 
-### 3. Verificar se Tudo Funciona
+=== "Verificar o Funcionamento"
 
 ```bash
 # Executar testes
@@ -98,7 +99,7 @@ git push origin feature/nome-da-feature
 
 ## Padrões de Código
 
-### Java (Backend)
+=== "Java (Backend)"
 
 ```java
 // ✅ Bom - Nomenclatura clara
@@ -120,13 +121,14 @@ public class UserController {
 }
 ```
 
-**Diretrizes:**
-- Use **nomes descritivos** para classes, métodos e variáveis
-- **Injeção de dependência** via construtor
-- **Annotations** Spring padrão
-- **Tratamento de exceções** quando necessário
+**Diretrizes:**  
 
-### JavaScript (Frontend)
+- Use **nomes descritivos** para classes, métodos e variáveis  
+- **Injeção de dependência** via construtor  
+- **Annotations** Spring padrão  
+- **Tratamento de exceções** quando necessário  
+
+=== "JavaScript (Frontend)"
 
 ```javascript
 // ✅ Bom - Funções claras e async/await
@@ -149,12 +151,13 @@ function displayUsers(users) {
 ```
 
 **Diretrizes:**
-- Use **async/await** em vez de callbacks
-- **Tratamento de erros** adequado
-- **Funções pequenas** e específicas
-- **Nomes descritivos** de variáveis e funções
 
-### CSS
+- Use **async/await** em vez de callbacks  
+- **Tratamento de erros** adequado  
+- **Funções pequenas** e específicas  
+- **Nomes descritivos** de variáveis e funções  
+
+=== "CSS"
 
 ```css
 /* ✅ Bom - Classes semânticas e responsivas */
@@ -189,7 +192,7 @@ function displayUsers(users) {
 
 ## Testes
 
-### Executar Testes
+=== "Executar Testes"
 
 ```bash
 # Todos os testes
@@ -202,7 +205,7 @@ mvn test -Dtest=UserControllerTest
 mvn test jacoco:report
 ```
 
-### Escrever Testes
+=== "Escrever Testes"
 
 ```java
 @SpringBootTest
@@ -223,7 +226,7 @@ class UserControllerTest {
 
 ## Tipos de Issues
 
-### Bug Report
+=== "Bug Report"
 
 **Template:**
 ```
@@ -247,7 +250,7 @@ Se aplicável, adicione screenshots.
 - Java: [e.g. 17]
 ```
 
-### Feature Request
+=== "Feature Request"
 
 **Template:**
 ```
@@ -340,13 +343,14 @@ Principais pontos:
 ## Contato
 
 Dúvidas ou sugestões?
+
 - Abra uma issue no GitHub
 - Ou entre em contato diretamente pelo LinkedIn
 
----
+!!! success "Agradecimentos"
+    Obrigado por contribuir! Sua colaboração é muito valiosa e ajuda a melhorar o projeto.
 
-**Obrigado por contribuir!**  
-Sua colaboração é muito valiosa!
+---
 
 Desenvolvido por **Alan de Oliveira Gonçalves**   
 [GitHub](https://github.com/Alan-oliveir) | [LinkedIn](https://www.linkedin.com/in/alan-ogoncalves)  

@@ -80,7 +80,7 @@ mvn spring-boot:run
 ## 📚 Documentação
 
 - **[📖 Documentação da API (Scalar)](http://localhost:8080/scalar/docs)** - Documentação interativa completa
-- **[🔧 Documentação Técnica](docs/)** - Detalhes de implementação e arquitetura
+- **[🔧 Documentação Técnica](https://alan-oliveir.github.io/userdept/)** - Detalhes de implementação e arquitetura
 
 ## 🏗️ Estrutura do Projeto
 
@@ -121,10 +121,7 @@ Este projeto foi feito durante aula da **DevSperior** de desenvolvimento web com
 
 ## 🤝 Contribuições
 
-Contribuições são bem-vindas! Sinta-se à vontade para:
-- Reportar bugs
-- Sugerir melhorias
-- Enviar pull requests
+Quer contribuir para o projeto? Ótimo! Confira o nosso [guia de contribuição](docs/contributing.md) para saber como participar.
 
 ## 🙏 Agradecimentos
 
